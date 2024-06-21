@@ -7,5 +7,5 @@ This file contains a C implementation of the [A* Graph Search Algorithm](https:/
 This file contains a C implementation of the [LRU Cache Policy](https://en.wikipedia.org/wiki/Cache_replacement_policies).
 
 # 3. spread_trade
-This file contains a python implementation of a simple [spread trading algorithm[(https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/spread-trading/), backtested and analyzed.<br>
+This file contains a python implementation of a simple [spread trading algorithm](https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/spread-trading/), backtested and analyzed.<br>
 
