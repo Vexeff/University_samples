@@ -7,10 +7,8 @@ TESTS=./tests
 BIN= ./bin
 CC=clang
 
-all: student_test_a_star test_a_star
+all: test_a_star
 
-student_test_a_star: $(SOURCE)/a_star.c $(SOURCE)/student_test_a_star.c $(SOURCE)/util.c
-	$(CC) $(CFLAGS) $? -o $(BIN)/$@ -I $(INCLUDES) $(LDLIBS)
 
 test_a_star: $(TESTS)/test_a_star.c $(SOURCE)/a_star.c $(SOURCE)/util.c
 	$(CC) $(CFLAGS) $?  -o $(BIN)/$@ -I $(INCLUDES) $(LDLIBS)
@@ -21,6 +19,6 @@ gen_score: test_a_star
 
 clean:
 	rm -f results.json results.log
-	rm -f $(BIN)/student_test_a_star $(BIN)/test_a_star
+	rm -f $(BIN)/test_a_star
 	rm -rf $(BIN)/*.dSYM
 	rm -rf *~ */*~
